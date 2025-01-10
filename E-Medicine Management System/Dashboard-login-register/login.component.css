@@ -1,0 +1,37 @@
+/* The :host selector applies styles to the root component */
+
+:host {
+  display: flex;
+  justify-content: center;
+  margin: 100px 0px;
+}
+
+/* Styles for mat-card to set a maximum width */
+mat-card {
+  max-width: 600px;
+}
+
+/* Align the title and content of the mat-card to the center */
+mat-card-title,
+mat-card-content {
+  display: flex;
+  justify-content: center;
+}
+
+mat-card-content form .mat-form-field {
+  width: 100%;
+  min-width: 300px;
+}
+
+mat-card-content form .error {
+  padding: 16px;
+  width: 300px;
+  color: white;
+  background-color: red;
+}
+
+/* Align buttons in the form to the right */
+mat-card-content form .button {
+  display: flex;
+  justify-content: flex-end;
+}

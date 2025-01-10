@@ -1,0 +1,59 @@
+<!-- Navbar Container -->
+<div class="navbar-container">
+    <!-- Logo and Title -->
+    <div class="logo-container">
+      <span class="logo">E-Medicine System</span>
+    </div>
+  
+    <!-- Navigation Bar -->
+    <nav mat-tab-nav-bar class="nav-bar">
+      <a mat-tab-link [routerLink]="['/public/my-medicine-inventory']">Inventory Management</a>
+      <a mat-tab-link [routerLink]="['/public/sales-management']">Sales</a>
+      <a mat-tab-link [routerLink]="['/public/my-supplier']">Suppliers</a>
+      <a mat-tab-link [routerLink]="['/public/purchase']">Purchases</a>
+      <a mat-tab-link [routerLink]="['/public/my-cart']">Cart</a>
+      <button mat-raised-button (click)="logout()">Logout</button>
+    </nav>
+  </div>
+  
+  <!-- Welcome Message Section -->
+  <div class="welcome-section">
+    <h1>Welcome to E-Medicine Management System</h1>
+    <button mat-raised-button (click)="toggleFeatures()">Know more!!</button>
+  </div>
+  
+  <!-- Slide-In Features Section -->
+  <div class="features" *ngIf="showFeatures">
+    <h3>
+      This pharmacy management system is crafted to simplify and enhance 
+      the daily operations of pharmacists. With features like detailed 
+      inventory tracking—covering batch numbers, expiry dates, and storage
+       locations—it ensures smooth stock management. It also provides 
+       tools for analyzing sales trends, managing suppliers seamlessly, 
+       and processing orders efficiently through a user-friendly cart. 
+       Designed specifically for pharmacists, this system empowers you to 
+       streamline workflows, make data-driven decisions, and improve the 
+       overall efficiency of your pharmacy operations.
+    </h3>
+  </div>
+  
+  <!-- Protected Dashboard Information -->
+  <!--<p>Protected Dashboard works.</p>-->
+  
+  <!-- Links for Login, Register, and Anju -->
+  <!--<a [routerLink]="['../../public/login']">Login</a>
+  <br>
+  <a [routerLink]="['../../public/register']">Register</a>
+  <br>
+  <a [routerLink]="['/public/anju']">Anju</a>
+  <br>
+  
+   Logout Button
+  <button mat-raised-button (click)="logout()">Logout</button>
+
+-->
+
+
+
+  
+  
